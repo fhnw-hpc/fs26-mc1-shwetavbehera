@@ -1,0 +1,81 @@
+services:
+
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: rabbitmq1
+    hostname: rabbitmq1
+    ports:
+      - "5672:5672"    # AMQP protocol port (producers/consumers connect here)
+      - "15672:15672"  # Management UI (http://localhost:15672, guest/guest)
+    environment:
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: guest
+    healthcheck:
+      test: ["CMD", "rabbitmq-diagnostics", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  stock-producer:
+    build:
+      context: .
+      dockerfile: Dockerfile.python
+    container_name: rmq-stock-producer
+    command: python producers/stock_producer_rmq.py
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+    environment:
+      RABBITMQ_HOST: rabbitmq1
+
+  news-producer:
+    build:
+      context: .
+      dockerfile: Dockerfile.python
+    container_name: rmq-news-producer
+    command: python producers/news_producer_rmq.py
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+    environment:
+      RABBITMQ_HOST: rabbitmq1
+
+  consumer-sink-stocks:
+    build:
+      context: .
+      dockerfile: Dockerfile.python
+    container_name: rmq-sink-stocks
+    command: python consumers/consumer_sink_stocks_rmq.py
+    volumes:
+      - ./data:/app/data
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+    environment:
+      RABBITMQ_HOST: rabbitmq1
+
+  consumer-sink-news:
+    build:
+      context: .
+      dockerfile: Dockerfile.python
+    container_name: rmq-sink-news
+    command: python consumers/consumer_sink_news_rmq.py
+    volumes:
+      - ./data:/app/data
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+    environment:
+      RABBITMQ_HOST: rabbitmq1
+
+  consumer-processor:
+    build:
+      context: .
+      dockerfile: Dockerfile.python
+    container_name: rmq-processor
+    command: python consumers/consumer_processor_rmq.py
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+    environment:
+      RABBITMQ_HOST: rabbitmq1

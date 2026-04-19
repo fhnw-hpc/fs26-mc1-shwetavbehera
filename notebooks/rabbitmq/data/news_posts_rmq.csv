@@ -1,0 +1,178 @@
+post_id,source,author,content,tags,sentiment_hint,timestamp
+1d19f935-4845-44a2-9b48-86a3eec7ad80,bloomberg,user_289,MSFT faces regulatory scrutiny in EU.,"['MSFT', 'bearish', 'regulation']",-0.32,2026-04-19T13:26:29.213624+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+dd75827b-50ed-49eb-a551-65a4b34d04cf,bloomberg,user_770,Breaking: AMZN announces new product line.,"['AMZN', 'bullish', 'product']",0.62,2026-04-19T13:26:30.214370+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+8a5d5c52-918f-4a20-81d2-f21149b47f24,bloomberg,user_999,GOOGL earnings beat expectations this quarter!,"['GOOGL', 'bullish', 'earnings']",0.38,2026-04-19T13:26:31.214922+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+e861be21-ba48-44d6-b39a-40edf84d67b3,bloomberg,user_474,CEO of AMZN steps down unexpectedly.,"['AMZN', 'bearish', 'management']",-0.44,2026-04-19T13:26:32.215430+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+4b892ee4-380a-47d3-8e9d-c8fa34f84573,techcrunch,user_517,MSFT earnings beat expectations this quarter!,"['MSFT', 'bullish', 'earnings']",0.73,2026-04-19T13:26:33.216032+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+6bce25d4-9782-49eb-90d9-8aa2a8af7bbc,reddit,user_537,MSFT earnings beat expectations this quarter!,"['MSFT', 'bullish', 'earnings']",0.59,2026-04-19T13:26:34.216669+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+2222537a-80e2-4f63-af15-ae44ca07b96b,twitter,user_497,AAPL faces regulatory scrutiny in EU.,"['AAPL', 'bearish', 'regulation']",-0.4,2026-04-19T13:26:35.217245+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+fcd06733-e21d-4309-aeb8-a44aee7d7c81,bloomberg,user_610,Analysts downgrade TSLA amid market uncertainty.,"['TSLA', 'bearish', 'analyst']",-0.74,2026-04-19T13:26:36.217775+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+28b4b2b1-07c1-4485-9292-1df1a97973e5,bloomberg,user_772,MSFT stock hits 52-week high.,"['MSFT', 'bullish', 'momentum']",0.65,2026-04-19T13:26:37.218378+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+958eacca-25f3-4e48-9e70-70c770055999,twitter,user_408,Breaking: MSFT announces new product line.,"['MSFT', 'bullish', 'product']",0.45,2026-04-19T13:26:38.219076+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+7a04bf5d-32f0-42d8-abb9-89f97bea26ce,twitter,user_264,TSLA earnings beat expectations this quarter!,"['TSLA', 'bullish', 'earnings']",0.84,2026-04-19T13:26:39.219656+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+4e2b26a4-42d9-4597-ac42-94d35764e742,bloomberg,user_895,Breaking: MSFT announces new product line.,"['MSFT', 'bullish', 'product']",0.62,2026-04-19T13:26:40.220206+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+8f601cb6-19a3-4045-b6cf-ff0c22d75416,bloomberg,user_943,Analysts downgrade GOOGL amid market uncertainty.,"['GOOGL', 'bearish', 'analyst']",-0.52,2026-04-19T13:26:41.220716+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+6a3cfcae-d455-459d-a3be-42954550b75e,reddit,user_135,AMZN earnings beat expectations this quarter!,"['AMZN', 'bullish', 'earnings']",0.37,2026-04-19T13:26:42.221284+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+788d0065-5bb3-4c40-ba61-bc1b92ca0227,bloomberg,user_854,CEO of AMZN steps down unexpectedly.,"['AMZN', 'bearish', 'management']",-0.36,2026-04-19T13:26:43.221833+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+5950f25d-7811-4f82-8c22-5c73c2474ab3,techcrunch,user_166,CEO of AMZN steps down unexpectedly.,"['AMZN', 'bearish', 'management']",-0.33,2026-04-19T13:26:44.222462+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+54267d2f-0eeb-4e97-bf3d-77fca373b569,techcrunch,user_747,Analysts downgrade AMZN amid market uncertainty.,"['AMZN', 'bearish', 'analyst']",-0.71,2026-04-19T13:26:45.222967+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+4a25e0c6-b38a-4140-b23a-2749591ebdc2,twitter,user_721,GOOGL earnings beat expectations this quarter!,"['GOOGL', 'bullish', 'earnings']",0.67,2026-04-19T13:26:46.223507+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+b77cc05c-672a-44d2-9bac-b9b3123139c2,twitter,user_327,Strong demand drives TSLA revenue growth.,"['TSLA', 'bullish', 'revenue']",0.35,2026-04-19T13:26:47.224051+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+d29b191a-6133-480c-b4ba-7f942444dfff,techcrunch,user_356,Breaking: GOOGL announces new product line.,"['GOOGL', 'bullish', 'product']",0.32,2026-04-19T13:26:48.224628+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+f35a6214-5513-4e67-abcd-c27fa9e0fbdb,bloomberg,user_520,Strong demand drives MSFT revenue growth.,"['MSFT', 'bullish', 'revenue']",0.82,2026-04-19T13:26:49.225182+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+fc6d3393-7eb7-48eb-94d3-f509c06fdff0,twitter,user_384,AMZN earnings beat expectations this quarter!,"['AMZN', 'bullish', 'earnings']",0.35,2026-04-19T13:26:50.225743+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+4f6553d0-c4ec-4127-addb-d19a40f72ba6,twitter,user_209,AAPL faces regulatory scrutiny in EU.,"['AAPL', 'bearish', 'regulation']",-0.55,2026-04-19T13:26:51.226211+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+653d9264-26e0-4a54-8294-4e6dd5d8e55b,reddit,user_473,Insider buying detected at AMZN.,"['AMZN', 'bullish', 'insider']",0.85,2026-04-19T13:26:52.226671+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+86256a21-f435-44d7-800c-e544f217e77f,bloomberg,user_885,GOOGL faces regulatory scrutiny in EU.,"['GOOGL', 'bearish', 'regulation']",-0.34,2026-04-19T13:26:53.227282+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+bf60546b-62e4-4f62-bac8-c85932617f58,reddit,user_559,TSLA earnings beat expectations this quarter!,"['TSLA', 'bullish', 'earnings']",0.41,2026-04-19T13:26:54.227803+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+f26fb8b8-0195-4d12-8825-0246cfae3021,bloomberg,user_211,TSLA faces regulatory scrutiny in EU.,"['TSLA', 'bearish', 'regulation']",-0.68,2026-04-19T13:26:55.226919+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+507d2fc8-6654-42dc-8d32-90aae71afa09,bloomberg,user_124,GOOGL stock hits 52-week high.,"['GOOGL', 'bullish', 'momentum']",0.64,2026-04-19T13:26:56.227510+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+a6b334b4-b808-4ae0-80f2-0eddc6588f4c,techcrunch,user_366,AAPL stock hits 52-week high.,"['AAPL', 'bullish', 'momentum']",0.84,2026-04-19T13:26:57.228492+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+ced1207a-8f01-4b76-815d-7deabd57fefa,bloomberg,user_566,CEO of AMZN steps down unexpectedly.,"['AMZN', 'bearish', 'management']",-0.58,2026-04-19T13:26:58.230561+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+53f8f67b-7681-4d78-9617-00f36eefabd6,reddit,user_748,CEO of TSLA steps down unexpectedly.,"['TSLA', 'bearish', 'management']",-0.78,2026-04-19T13:26:59.232267+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+9508fbb3-2f4d-43d0-893d-17dbb6e0e476,twitter,user_892,Breaking: GOOGL announces new product line.,"['GOOGL', 'bullish', 'product']",0.36,2026-04-19T13:27:00.232868+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+5901e174-df7d-477f-ab57-fd5741fae66c,bloomberg,user_903,GOOGL faces regulatory scrutiny in EU.,"['GOOGL', 'bearish', 'regulation']",-0.54,2026-04-19T13:27:01.233524+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+4ca076e3-fab4-43a3-8b75-ea8964e13342,bloomberg,user_266,CEO of AAPL steps down unexpectedly.,"['AAPL', 'bearish', 'management']",-0.89,2026-04-19T13:27:02.234312+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+0b7298ef-82cc-4e7f-9e29-b86681ffe94e,techcrunch,user_100,Strong demand drives GOOGL revenue growth.,"['GOOGL', 'bullish', 'revenue']",0.32,2026-04-19T13:27:03.235043+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+654b67f1-489e-4360-a484-ae99c08cdcd3,bloomberg,user_140,AMZN stock hits 52-week high.,"['AMZN', 'bullish', 'momentum']",0.58,2026-04-19T13:27:04.235694+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+c889cd6a-10a4-4dfb-9de4-8627b42732b9,bloomberg,user_653,MSFT earnings beat expectations this quarter!,"['MSFT', 'bullish', 'earnings']",0.46,2026-04-19T13:27:05.236307+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+5b1436a9-6803-4490-b3b7-2db917fb723d,techcrunch,user_183,TSLA faces regulatory scrutiny in EU.,"['TSLA', 'bearish', 'regulation']",-0.76,2026-04-19T13:27:06.236851+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+2fc575a1-dd66-44a3-9dff-b4dfca2a1131,twitter,user_518,MSFT earnings beat expectations this quarter!,"['MSFT', 'bullish', 'earnings']",0.84,2026-04-19T13:27:07.237510+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+6ac2875a-7411-4ab7-a755-c968316d09aa,reddit,user_732,Insider buying detected at MSFT.,"['MSFT', 'bullish', 'insider']",0.85,2026-04-19T13:27:08.238027+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+99b65a2b-4a16-4a1d-8e68-f66ddb7a3ffb,twitter,user_219,Analysts downgrade AMZN amid market uncertainty.,"['AMZN', 'bearish', 'analyst']",-0.57,2026-04-19T13:27:09.238599+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+3c11bc8f-2c2c-4060-990c-7104670af85b,twitter,user_722,Analysts downgrade AAPL amid market uncertainty.,"['AAPL', 'bearish', 'analyst']",-0.37,2026-04-19T13:27:10.239115+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+25a35222-0679-4aaf-9066-288481fc7650,twitter,user_944,CEO of TSLA steps down unexpectedly.,"['TSLA', 'bearish', 'management']",-0.62,2026-04-19T13:27:11.239559+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+fbc30d51-35e7-4422-bbd5-68e1f6d0cb37,twitter,user_682,Analysts downgrade AMZN amid market uncertainty.,"['AMZN', 'bearish', 'analyst']",-0.34,2026-04-19T13:27:12.240409+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+11997365-76af-41dc-8984-d4d29231a5c7,techcrunch,user_729,GOOGL earnings beat expectations this quarter!,"['GOOGL', 'bullish', 'earnings']",0.78,2026-04-19T13:27:13.242877+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+50bf434b-f6dc-49c9-93ae-0c98cc9a4b3f,bloomberg,user_926,GOOGL faces regulatory scrutiny in EU.,"['GOOGL', 'bearish', 'regulation']",-0.81,2026-04-19T13:27:14.243668+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+d900e41d-f9c7-448c-a7fa-35b3ba011faa,bloomberg,user_240,GOOGL faces regulatory scrutiny in EU.,"['GOOGL', 'bearish', 'regulation']",-0.87,2026-04-19T13:27:15.244234+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+321012f3-e02f-4167-8cc1-4ab9ebceaa24,techcrunch,user_832,Strong demand drives AAPL revenue growth.,"['AAPL', 'bullish', 'revenue']",0.89,2026-04-19T13:27:16.244814+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+2e41c21e-4e1a-4197-b96f-21893b802bc2,twitter,user_852,MSFT stock hits 52-week high.,"['MSFT', 'bullish', 'momentum']",0.87,2026-04-19T13:27:17.245481+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+16cf8bd0-a03c-4ce2-b132-b608f77ba48c,bloomberg,user_955,Analysts downgrade TSLA amid market uncertainty.,"['TSLA', 'bearish', 'analyst']",-0.63,2026-04-19T13:27:18.246047+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+74411dfa-8da5-4220-93eb-89eb837655bb,techcrunch,user_203,GOOGL stock hits 52-week high.,"['GOOGL', 'bullish', 'momentum']",0.73,2026-04-19T13:27:19.246609+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+4d77c809-3849-4f50-b0df-a12362bb7749,twitter,user_515,GOOGL faces regulatory scrutiny in EU.,"['GOOGL', 'bearish', 'regulation']",-0.31,2026-04-19T13:27:20.247160+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+d987062d-3bce-43a1-8b0e-32fc321c3764,techcrunch,user_483,Breaking: AAPL announces new product line.,"['AAPL', 'bullish', 'product']",0.62,2026-04-19T13:27:21.247674+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+67279928-38e8-465d-aa76-952ee2e0d346,reddit,user_348,GOOGL faces regulatory scrutiny in EU.,"['GOOGL', 'bearish', 'regulation']",-0.75,2026-04-19T13:27:22.248323+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+4d2369bb-1262-45f7-a479-4ff72bc63a38,bloomberg,user_161,MSFT earnings beat expectations this quarter!,"['MSFT', 'bullish', 'earnings']",0.83,2026-04-19T13:27:23.249160+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+cf9865b9-27c7-402b-804b-6de36621e020,bloomberg,user_671,Analysts downgrade TSLA amid market uncertainty.,"['TSLA', 'bearish', 'analyst']",-0.62,2026-04-19T13:27:24.249745+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+73f6159c-a7b9-415c-8d10-36badf9ca918,techcrunch,user_499,Breaking: AAPL announces new product line.,"['AAPL', 'bullish', 'product']",0.4,2026-04-19T13:27:25.249138+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+1ceb176d-29c4-4156-9065-5afdb07a0b56,bloomberg,user_355,Breaking: AAPL announces new product line.,"['AAPL', 'bullish', 'product']",0.87,2026-04-19T13:27:26.249765+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+5c0e3366-61a2-42f4-b03e-2f2f0655ecfc,twitter,user_754,Insider buying detected at GOOGL.,"['GOOGL', 'bullish', 'insider']",0.75,2026-04-19T13:27:27.250617+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+2408d2f3-25f5-4490-b1cc-63864c846e71,twitter,user_668,Analysts downgrade MSFT amid market uncertainty.,"['MSFT', 'bearish', 'analyst']",-0.44,2026-04-19T13:27:28.251638+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+195eec5a-1bda-43f0-b581-93998e219f28,techcrunch,user_477,MSFT faces regulatory scrutiny in EU.,"['MSFT', 'bearish', 'regulation']",-0.62,2026-04-19T13:27:29.252349+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+8db83824-b39a-4e3a-bffe-b564e571bcfc,twitter,user_950,MSFT faces regulatory scrutiny in EU.,"['MSFT', 'bearish', 'regulation']",-0.81,2026-04-19T13:27:30.252872+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+19c3460e-9a3d-41d1-a596-43e86c97b41b,techcrunch,user_319,Strong demand drives AAPL revenue growth.,"['AAPL', 'bullish', 'revenue']",0.74,2026-04-19T13:27:31.253354+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+0b8b25c4-6bfe-4d3c-b8aa-4d37ef3e50de,reddit,user_331,Breaking: MSFT announces new product line.,"['MSFT', 'bullish', 'product']",0.46,2026-04-19T13:27:32.253877+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+a9e548b1-21c0-4278-864d-f40aeb0300f9,reddit,user_180,Analysts downgrade GOOGL amid market uncertainty.,"['GOOGL', 'bearish', 'analyst']",-0.85,2026-04-19T13:27:33.254501+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+833efbaa-8826-4765-aac6-da58c80f7a74,twitter,user_111,GOOGL faces regulatory scrutiny in EU.,"['GOOGL', 'bearish', 'regulation']",-0.83,2026-04-19T13:27:34.255369+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+71fcd69d-cfa2-43fc-8de2-5d2072e19122,techcrunch,user_267,Analysts downgrade MSFT amid market uncertainty.,"['MSFT', 'bearish', 'analyst']",-0.34,2026-04-19T13:27:35.256366+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+db5fea77-953e-4f5d-b882-591c6eb45fcc,techcrunch,user_505,GOOGL stock hits 52-week high.,"['GOOGL', 'bullish', 'momentum']",0.85,2026-04-19T13:27:36.257021+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+7db752ee-afb3-4d90-a733-97182cdee4dc,reddit,user_970,Insider buying detected at MSFT.,"['MSFT', 'bullish', 'insider']",0.47,2026-04-19T13:27:37.257578+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+ac34601b-c479-48f9-ba94-4a39ca73fbac,reddit,user_494,Breaking: MSFT announces new product line.,"['MSFT', 'bullish', 'product']",0.36,2026-04-19T13:27:38.258228+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+bfa2bff0-4bf8-46b3-855f-262a587d1e06,techcrunch,user_445,Breaking: GOOGL announces new product line.,"['GOOGL', 'bullish', 'product']",0.82,2026-04-19T13:27:39.258818+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+6ffd235e-cf47-466f-a8dc-388568a67a99,bloomberg,user_993,AAPL earnings beat expectations this quarter!,"['AAPL', 'bullish', 'earnings']",0.33,2026-04-19T13:27:40.259344+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+718eae6f-de8e-4f3a-b291-179562d3e6a5,bloomberg,user_773,Strong demand drives GOOGL revenue growth.,"['GOOGL', 'bullish', 'revenue']",0.41,2026-04-19T13:27:41.259962+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+f147af3b-4726-48da-9178-efd778f03703,twitter,user_644,Strong demand drives GOOGL revenue growth.,"['GOOGL', 'bullish', 'revenue']",0.84,2026-04-19T13:27:42.260485+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+13b1ba44-a04a-46fe-be54-8e337b71e2b8,reddit,user_134,Strong demand drives GOOGL revenue growth.,"['GOOGL', 'bullish', 'revenue']",0.71,2026-04-19T13:27:43.261062+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+d20f5167-874c-4f4f-8c52-7b13bc2420e9,techcrunch,user_140,CEO of AAPL steps down unexpectedly.,"['AAPL', 'bearish', 'management']",-0.57,2026-04-19T13:27:44.261669+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+1e29f92e-69bb-43fc-b10e-500f1899fdf3,techcrunch,user_829,MSFT faces regulatory scrutiny in EU.,"['MSFT', 'bearish', 'regulation']",-0.59,2026-04-19T13:27:45.262170+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+c3369658-f2b0-4a13-b066-f4d3e7986538,techcrunch,user_868,Breaking: AAPL announces new product line.,"['AAPL', 'bullish', 'product']",0.53,2026-04-19T13:27:46.262769+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+4c93cd4b-903f-49e9-b8d2-66f87a8954d0,bloomberg,user_647,MSFT faces regulatory scrutiny in EU.,"['MSFT', 'bearish', 'regulation']",-0.76,2026-04-19T13:27:47.263402+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+ec9c30e7-f30c-4d9e-b64b-1a375321dbd1,reddit,user_813,AAPL faces regulatory scrutiny in EU.,"['AAPL', 'bearish', 'regulation']",-0.6,2026-04-19T13:27:48.264041+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+ba333c69-1472-447e-8c95-1c3d5cd4aa39,reddit,user_881,AAPL earnings beat expectations this quarter!,"['AAPL', 'bullish', 'earnings']",0.63,2026-04-19T13:27:49.264576+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+0a9f2f8d-7473-45a7-9b42-20acc7128b0c,reddit,user_865,AMZN faces regulatory scrutiny in EU.,"['AMZN', 'bearish', 'regulation']",-0.79,2026-04-19T13:27:50.265157+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+f33594e0-3aae-484f-afd6-aa35b7bdabb5,twitter,user_127,Insider buying detected at GOOGL.,"['GOOGL', 'bullish', 'insider']",0.67,2026-04-19T13:27:51.265688+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+82a0fa15-4164-4516-be79-fcb05d36eac0,twitter,user_149,Strong demand drives GOOGL revenue growth.,"['GOOGL', 'bullish', 'revenue']",0.52,2026-04-19T13:27:52.266248+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+337cb528-4b83-4593-9bde-9ebe6785e7ba,reddit,user_295,TSLA stock hits 52-week high.,"['TSLA', 'bullish', 'momentum']",0.54,2026-04-19T13:27:53.266918+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+cf914664-0c92-4e85-a213-a6c3c7ddda42,reddit,user_161,CEO of GOOGL steps down unexpectedly.,"['GOOGL', 'bearish', 'management']",-0.64,2026-04-19T13:27:54.267543+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+f6724756-8825-4d5a-8ccd-d56b51395032,techcrunch,user_189,Breaking: TSLA announces new product line.,"['TSLA', 'bullish', 'product']",0.82,2026-04-19T13:27:55.267134+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+81e1dd1e-b0bd-4be9-ac2d-dc8d87b70ba5,reddit,user_832,Breaking: TSLA announces new product line.,"['TSLA', 'bullish', 'product']",0.67,2026-04-19T13:27:56.267654+00:00
+post_id,source,author,content,tags,sentiment_hint,timestamp
+a98018bb-0890-4bda-851c-3c509ae74936,techcrunch,user_817,Analysts downgrade AAPL amid market uncertainty.,"['AAPL', 'bearish', 'analyst']",-0.57,2026-04-19T13:27:57.268105+00:00
