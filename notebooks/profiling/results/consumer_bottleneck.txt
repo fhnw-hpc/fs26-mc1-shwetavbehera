@@ -1,0 +1,14 @@
+Consumer Deserialization Bottleneck Experiment
+Iterations: 10000
+
+msgpack:
+  mean  = 0.0005 ms
+  stdev = 0.0014 ms
+  total = 5.11 ms
+
+JSON:
+  mean  = 0.0013 ms
+  stdev = 0.0011 ms
+  total = 12.79 ms
+
+Speedup: msgpack is 2.50x faster than JSON
