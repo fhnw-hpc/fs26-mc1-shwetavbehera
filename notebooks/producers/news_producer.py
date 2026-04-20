@@ -7,7 +7,7 @@ import random
 import uuid
 from datetime import datetime, timezone
 from kafka import KafkaProducer
-from shared.kafka_config import BOOTSTRAP_SERVERS, TOPICS
+from shared.kafka_config import BOOTSTRAP_SERVERS, TOPICS, wait_for_kafka
 from shared.serializer import serialize
 
 TOPIC = TOPICS["news_posts"]
@@ -29,6 +29,7 @@ SYMBOLS = ["AAPL", "GOOGL", "MSFT", "TSLA", "AMZN"]
 
 
 def run():
+    wait_for_kafka()
     producer = KafkaProducer(
         bootstrap_servers=BOOTSTRAP_SERVERS,
         value_serializer=serialize,
@@ -54,11 +55,9 @@ def run():
                 "sentiment_hint": sentiment,
                 "timestamp": datetime.now(timezone.utc).isoformat(),
             }
-
             producer.send(TOPIC, value=message)
             print(f"[NEWS] {message}")
-
-            time.sleep(1.0)  # ~1Hz
+            time.sleep(1.0)
 
     except KeyboardInterrupt:
         print("Stopping news producer.")
