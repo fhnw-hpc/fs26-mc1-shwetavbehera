@@ -1,28 +1,41 @@
-import sys
-import os
-sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
+"""
+Part 2 - Producer Experiment
+Produces stock ticks to a configurable topic at 10Hz.
 
+Usage:
+   python producers/producer_experiment.py <topic>
+
+Examples:
+   python producers/producer_experiment.py stock-ticks-p1-r1
+   python producers/producer_experiment.py stock-ticks-p3-r1
+   python producers/producer_experiment.py stock-ticks-p3-r3
+
+Run via Docker:
+   docker exec -it jupyter1 python producers/producer_experiment.py stock-ticks-p3-r3
+"""
+
+import sys
 import time
 import random
 from datetime import datetime, timezone
+
+import msgpack
 from kafka import KafkaProducer
-from shared.kafka_config import BOOTSTRAP_SERVERS
-from shared.serializer import serialize
 
-"""
-Part 2
-
-Usage:
-   python producers/producer_experiment.py stock-ticks-p3-r3
-"""
+BOOTSTRAP_SERVERS = "kafka1:9092,kafka2:9092,kafka3:9092"
 
 topic = sys.argv[1] if len(sys.argv) > 1 else "stock-ticks-p3-r3"
 
-
 STOCKS = {"AAPL": 182.0, "GOOGL": 140.0, "MSFT": 415.0, "TSLA": 175.0, "AMZN": 185.0}
 
-def next_price(current):
+
+def serialize(data: dict) -> bytes:
+    return msgpack.packb(data, use_bin_type=True)
+
+
+def next_price(current: float) -> float:
     return round(max(1.0, current + random.uniform(-0.5, 0.5)), 2)
+
 
 producer = KafkaProducer(
     bootstrap_servers=BOOTSTRAP_SERVERS,

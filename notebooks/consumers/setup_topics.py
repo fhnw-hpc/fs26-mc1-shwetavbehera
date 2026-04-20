@@ -1,10 +1,17 @@
-import sys
-import os
-sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
+"""
+Part 2 - Topic Setup
+Creates the experimental topics with different partition/replication configs.
+
+Run once before starting Part 2 experiments:
+   docker exec -it jupyter1 python consumers/setup_topics.py
+
+Then check Kafdrop at http://localhost:9000 to inspect the topics.
+"""
 
 from kafka.admin import KafkaAdminClient, NewTopic
 from kafka.errors import TopicAlreadyExistsError
-from shared.kafka_config import BOOTSTRAP_SERVERS
+
+BOOTSTRAP_SERVERS = "kafka1:9092,kafka2:9092,kafka3:9092"
 
 TOPICS_TO_CREATE = [
     # (name,               partitions, replication_factor)
