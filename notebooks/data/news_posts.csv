@@ -132,3 +132,120 @@ ab42898a-aea5-42f0-86ec-aeb194a7d57e,techcrunch,user_283,AAPL earnings beat expe
 16c543fe-0124-47eb-b8a7-8cb6fbeef2ac,bloomberg,user_348,AAPL stock hits 52-week high.,"['AAPL', 'bullish', 'momentum']",0.33,2026-04-16T15:03:45.288217+00:00
 a69b999d-0eaf-45ad-a055-b9eaf44a1fb1,techcrunch,user_540,MSFT earnings beat expectations this quarter!,"['MSFT', 'bullish', 'earnings']",0.43,2026-04-16T15:03:46.288967+00:00
 ab8dcb50-b908-437f-afcc-832572d18545,twitter,user_597,Breaking: AAPL announces new product line.,"['AAPL', 'bullish', 'product']",0.32,2026-04-16T15:03:47.289778+00:00
+ee1cbb85-1d55-414c-8d89-04d5c8fd3796,techcrunch,user_886,Analysts downgrade AMZN amid market uncertainty.,"['AMZN', 'bearish', 'analyst']",-0.49,2026-04-20T16:24:36.270317+00:00
+bf122e10-e0b5-4ecc-9091-d9c7ca8e54f2,twitter,user_603,Breaking: GOOGL announces new product line.,"['GOOGL', 'bullish', 'product']",0.43,2026-04-20T16:24:38.180760+00:00
+9826036a-c0d5-404c-ac30-9fb714cd0d4b,bloomberg,user_347,MSFT stock hits 52-week high.,"['MSFT', 'bullish', 'momentum']",0.69,2026-04-20T16:24:39.182219+00:00
+97e91b08-f05a-4ec1-8c3c-b7a5911d3df5,reddit,user_228,AMZN stock hits 52-week high.,"['AMZN', 'bullish', 'momentum']",0.37,2026-04-20T16:24:40.184094+00:00
+86269e82-99a2-4565-8b01-bf64abc94e42,reddit,user_101,AMZN stock hits 52-week high.,"['AMZN', 'bullish', 'momentum']",0.4,2026-04-20T16:24:41.185447+00:00
+a74f3398-b71e-4405-9630-9dfb327d4771,twitter,user_925,Insider buying detected at TSLA.,"['TSLA', 'bullish', 'insider']",0.71,2026-04-20T16:24:42.186410+00:00
+0d973976-01b1-4416-bbba-3f51e8ca12a9,bloomberg,user_655,GOOGL faces regulatory scrutiny in EU.,"['GOOGL', 'bearish', 'regulation']",-0.57,2026-04-20T16:24:43.186955+00:00
+3ba9bb47-5ccf-4986-8f02-d74fb953cdc0,twitter,user_773,GOOGL faces regulatory scrutiny in EU.,"['GOOGL', 'bearish', 'regulation']",-0.37,2026-04-20T16:33:50.003364+00:00
+935a070a-a6b9-415b-a5ac-e5490d6ec52d,techcrunch,user_329,MSFT stock hits 52-week high.,"['MSFT', 'bullish', 'momentum']",0.61,2026-04-20T16:33:51.630145+00:00
+eb73a69a-dfc3-4c0a-baa5-f4ef68307117,techcrunch,user_520,AMZN earnings beat expectations this quarter!,"['AMZN', 'bullish', 'earnings']",0.67,2026-04-20T16:33:52.631401+00:00
+403e74bb-1a8e-40aa-8c6b-cdb1a597108d,bloomberg,user_330,Strong demand drives AMZN revenue growth.,"['AMZN', 'bullish', 'revenue']",0.74,2026-04-20T16:33:53.632039+00:00
+3deeea86-cb1c-4930-a2e0-a0c98c48bd92,bloomberg,user_567,CEO of AAPL steps down unexpectedly.,"['AAPL', 'bearish', 'management']",-0.4,2026-04-20T16:33:54.632756+00:00
+0e5cb583-1eb1-4133-af2f-4c4fe91c16da,techcrunch,user_185,Analysts downgrade MSFT amid market uncertainty.,"['MSFT', 'bearish', 'analyst']",-0.84,2026-04-20T16:33:55.634142+00:00
+17e41639-990b-4504-ae8a-b628e0a30553,reddit,user_608,Insider buying detected at MSFT.,"['MSFT', 'bullish', 'insider']",0.43,2026-04-20T16:33:56.634920+00:00
+83d1fcaa-35e1-4f60-9ddf-bd2e8196f434,bloomberg,user_636,Analysts downgrade AAPL amid market uncertainty.,"['AAPL', 'bearish', 'analyst']",-0.78,2026-04-20T16:33:57.635502+00:00
+c9556e26-028a-46d9-a3f3-c77b3e258791,bloomberg,user_330,CEO of AMZN steps down unexpectedly.,"['AMZN', 'bearish', 'management']",-0.68,2026-04-20T16:33:58.636103+00:00
+dde86be3-849e-4304-9b02-34f85459cea7,bloomberg,user_685,AMZN stock hits 52-week high.,"['AMZN', 'bullish', 'momentum']",0.84,2026-04-20T16:33:59.637082+00:00
+21c939da-8264-4800-a2ea-74ec12e3c137,twitter,user_805,Strong demand drives TSLA revenue growth.,"['TSLA', 'bullish', 'revenue']",0.79,2026-04-20T16:34:00.637552+00:00
+1160fc14-92b5-47c1-a099-dce2f6e90dd3,bloomberg,user_607,Strong demand drives MSFT revenue growth.,"['MSFT', 'bullish', 'revenue']",0.38,2026-04-20T16:34:01.638452+00:00
+7f09242a-7ed8-427a-92c8-ffe8044785e8,bloomberg,user_638,Insider buying detected at AMZN.,"['AMZN', 'bullish', 'insider']",0.58,2026-04-20T16:34:02.639175+00:00
+fadf64f0-ed8c-40e7-8512-78eecdac2591,techcrunch,user_691,Breaking: GOOGL announces new product line.,"['GOOGL', 'bullish', 'product']",0.61,2026-04-20T16:34:03.640242+00:00
+cf97e564-31c3-4214-a0d4-fb1e83d46701,twitter,user_560,Analysts downgrade GOOGL amid market uncertainty.,"['GOOGL', 'bearish', 'analyst']",-0.39,2026-04-20T16:34:04.641072+00:00
+08ecef25-e682-44fc-9232-44b908ef70ba,bloomberg,user_988,AAPL earnings beat expectations this quarter!,"['AAPL', 'bullish', 'earnings']",0.69,2026-04-20T16:34:05.642027+00:00
+01832146-7a75-4c62-83be-59e1e69d8cb7,bloomberg,user_385,AMZN stock hits 52-week high.,"['AMZN', 'bullish', 'momentum']",0.86,2026-04-20T16:34:06.643015+00:00
+f88c4c7d-2805-4faa-812d-cfc3573b4767,bloomberg,user_516,AAPL faces regulatory scrutiny in EU.,"['AAPL', 'bearish', 'regulation']",-0.89,2026-04-20T16:34:07.644075+00:00
+888746e9-a1cf-46d2-afba-2ae71b9720e6,twitter,user_719,Analysts downgrade GOOGL amid market uncertainty.,"['GOOGL', 'bearish', 'analyst']",-0.58,2026-04-20T16:34:08.644843+00:00
+8dc452e5-d24d-4cb3-8e57-8b803f832323,bloomberg,user_708,Strong demand drives AMZN revenue growth.,"['AMZN', 'bullish', 'revenue']",0.6,2026-04-20T16:34:09.645595+00:00
+ce058891-bdbe-4d86-8259-3ac05cab8fba,bloomberg,user_669,Breaking: AAPL announces new product line.,"['AAPL', 'bullish', 'product']",0.54,2026-04-20T16:34:10.646479+00:00
+aa4da92d-79ea-4fe1-a209-195a0441f974,reddit,user_788,Analysts downgrade GOOGL amid market uncertainty.,"['GOOGL', 'bearish', 'analyst']",-0.61,2026-04-20T16:34:11.647615+00:00
+b98e12da-0f02-4ebe-bff9-2cddd6e479df,twitter,user_350,AMZN earnings beat expectations this quarter!,"['AMZN', 'bullish', 'earnings']",0.76,2026-04-20T16:34:12.648642+00:00
+e1b0eeff-78fc-40ac-8f46-2f69669c0d09,reddit,user_508,Analysts downgrade MSFT amid market uncertainty.,"['MSFT', 'bearish', 'analyst']",-0.39,2026-04-20T16:34:13.651096+00:00
+b39db11a-332b-4bdf-96e2-6130eed96efc,bloomberg,user_741,AMZN earnings beat expectations this quarter!,"['AMZN', 'bullish', 'earnings']",0.47,2026-04-20T16:34:14.652317+00:00
+a8a19c86-10a6-43aa-abc2-d521e6e7b510,reddit,user_384,Analysts downgrade AAPL amid market uncertainty.,"['AAPL', 'bearish', 'analyst']",-0.49,2026-04-20T16:34:15.652928+00:00
+cbf9f071-325c-433f-9686-13bbf2071ffe,techcrunch,user_236,Insider buying detected at TSLA.,"['TSLA', 'bullish', 'insider']",0.72,2026-04-20T16:34:16.653479+00:00
+714af58a-b690-46fb-ab64-c374a084d75d,reddit,user_625,CEO of TSLA steps down unexpectedly.,"['TSLA', 'bearish', 'management']",-0.4,2026-04-20T16:34:17.654407+00:00
+4cddf3c3-4cff-4314-b7b8-863a92d1abbe,bloomberg,user_230,GOOGL faces regulatory scrutiny in EU.,"['GOOGL', 'bearish', 'regulation']",-0.33,2026-04-20T16:34:18.655269+00:00
+0ecd2332-b9ca-4ccb-9f1c-727096660b35,twitter,user_776,CEO of GOOGL steps down unexpectedly.,"['GOOGL', 'bearish', 'management']",-0.89,2026-04-20T16:34:19.656019+00:00
+afd45f70-b4f7-424e-8991-1046921853fc,twitter,user_984,MSFT earnings beat expectations this quarter!,"['MSFT', 'bullish', 'earnings']",0.37,2026-04-20T16:34:20.656944+00:00
+c17f51d1-16fc-4e1a-8bd7-e00e7e853054,twitter,user_673,Strong demand drives GOOGL revenue growth.,"['GOOGL', 'bullish', 'revenue']",0.4,2026-04-20T16:34:21.657894+00:00
+64e69c95-f00f-4de7-a7cf-067722f9caa3,bloomberg,user_489,MSFT earnings beat expectations this quarter!,"['MSFT', 'bullish', 'earnings']",0.51,2026-04-20T16:34:22.658735+00:00
+30957cdc-0df6-4c8b-bc7e-3102b4351aaf,twitter,user_741,Analysts downgrade AMZN amid market uncertainty.,"['AMZN', 'bearish', 'analyst']",-0.79,2026-04-20T16:34:23.659393+00:00
+cc2052f6-a843-42db-b774-6755a8f5bdcc,techcrunch,user_759,Strong demand drives TSLA revenue growth.,"['TSLA', 'bullish', 'revenue']",0.31,2026-04-20T16:34:24.659228+00:00
+a59b6b4f-4107-426a-979f-061ea6325d7d,reddit,user_616,Insider buying detected at MSFT.,"['MSFT', 'bullish', 'insider']",0.41,2026-04-20T16:34:25.659972+00:00
+c2433ad1-cb02-42b0-b217-3236ed7fd9b4,reddit,user_312,Strong demand drives MSFT revenue growth.,"['MSFT', 'bullish', 'revenue']",0.48,2026-04-20T16:34:26.661444+00:00
+a8fdfe8f-caa0-4ea3-b2ea-b0e5ef4cd641,twitter,user_357,Breaking: GOOGL announces new product line.,"['GOOGL', 'bullish', 'product']",0.4,2026-04-20T16:34:27.662463+00:00
+77aae94d-371a-45b0-b8bd-b3e19277cd45,twitter,user_101,AMZN faces regulatory scrutiny in EU.,"['AMZN', 'bearish', 'regulation']",-0.35,2026-04-20T16:34:28.663257+00:00
+3c3d94b0-f159-4649-9b20-32f50b20a1fb,bloomberg,user_654,MSFT faces regulatory scrutiny in EU.,"['MSFT', 'bearish', 'regulation']",-0.64,2026-04-20T16:34:29.664106+00:00
+ee5f2ec5-8469-4fb1-90c9-8d2735b21a21,twitter,user_258,Breaking: MSFT announces new product line.,"['MSFT', 'bullish', 'product']",0.51,2026-04-20T16:34:30.664574+00:00
+7a97b0f0-7903-4503-ba77-391b9b472633,reddit,user_106,MSFT faces regulatory scrutiny in EU.,"['MSFT', 'bearish', 'regulation']",-0.68,2026-04-20T16:34:31.665494+00:00
+92061dac-6122-4d9f-9218-8a20628c7289,reddit,user_830,AMZN faces regulatory scrutiny in EU.,"['AMZN', 'bearish', 'regulation']",-0.78,2026-04-20T16:34:32.666577+00:00
+c016d3a3-4918-45b5-93fc-10e0d83835f8,reddit,user_507,Breaking: AMZN announces new product line.,"['AMZN', 'bullish', 'product']",0.78,2026-04-20T16:34:33.667987+00:00
+abcb16c4-f543-4ff3-952c-f9f8a4edf5fa,bloomberg,user_834,Strong demand drives TSLA revenue growth.,"['TSLA', 'bullish', 'revenue']",0.34,2026-04-20T16:34:34.669039+00:00
+5a643482-5623-49ee-b04e-ad51c27604b5,reddit,user_674,AMZN earnings beat expectations this quarter!,"['AMZN', 'bullish', 'earnings']",0.44,2026-04-20T16:34:35.670501+00:00
+158bb2ca-e031-44f4-8deb-8cc4500541f0,bloomberg,user_843,Insider buying detected at GOOGL.,"['GOOGL', 'bullish', 'insider']",0.57,2026-04-20T16:34:36.671466+00:00
+33cdadef-52db-46b6-82cf-89e60bbe141a,bloomberg,user_795,Strong demand drives MSFT revenue growth.,"['MSFT', 'bullish', 'revenue']",0.54,2026-04-20T16:34:37.671958+00:00
+3e1ae8e0-1fa3-44d4-965f-4312e2b29643,twitter,user_384,Strong demand drives AMZN revenue growth.,"['AMZN', 'bullish', 'revenue']",0.85,2026-04-20T16:34:38.672696+00:00
+211194ab-6893-4d67-924a-953cd825852c,twitter,user_286,AMZN stock hits 52-week high.,"['AMZN', 'bullish', 'momentum']",0.64,2026-04-20T16:34:39.673476+00:00
+19843f41-8fc0-46a8-929d-d9f7dfc25a8b,twitter,user_243,CEO of TSLA steps down unexpectedly.,"['TSLA', 'bearish', 'management']",-0.61,2026-04-20T16:34:40.674092+00:00
+cafae2d1-4abb-473f-8cd0-2f956e2cc350,twitter,user_994,Insider buying detected at AMZN.,"['AMZN', 'bullish', 'insider']",0.38,2026-04-20T16:34:41.675346+00:00
+9dc3f046-8324-4f33-bc8e-39acdbeb139a,bloomberg,user_259,AMZN earnings beat expectations this quarter!,"['AMZN', 'bullish', 'earnings']",0.57,2026-04-20T16:34:42.676556+00:00
+ad0bfb35-e930-423e-8543-1c93303adc02,bloomberg,user_465,AAPL stock hits 52-week high.,"['AAPL', 'bullish', 'momentum']",0.77,2026-04-20T16:34:43.677394+00:00
+3564da13-f785-47c8-a499-53ebf3f4b6d8,bloomberg,user_776,TSLA earnings beat expectations this quarter!,"['TSLA', 'bullish', 'earnings']",0.56,2026-04-20T16:34:44.678310+00:00
+c5da1fe3-915c-4469-b72e-1dd8e2403a25,reddit,user_899,CEO of AAPL steps down unexpectedly.,"['AAPL', 'bearish', 'management']",-0.73,2026-04-20T16:34:45.683062+00:00
+be7e4e4e-0cb1-477a-9c4c-5aa8426e85d9,bloomberg,user_454,Analysts downgrade AAPL amid market uncertainty.,"['AAPL', 'bearish', 'analyst']",-0.48,2026-04-20T16:34:46.684101+00:00
+7e8813d7-9b4d-4fb2-8dd9-e3c82ef5106b,reddit,user_351,TSLA faces regulatory scrutiny in EU.,"['TSLA', 'bearish', 'regulation']",-0.48,2026-04-20T16:34:47.684587+00:00
+a986a8e5-3066-45c4-83de-f833746530ca,twitter,user_705,MSFT stock hits 52-week high.,"['MSFT', 'bullish', 'momentum']",0.4,2026-04-20T16:34:48.685490+00:00
+2bd30fb8-4d1b-4ce2-abb5-b930020f3e83,techcrunch,user_894,Breaking: AAPL announces new product line.,"['AAPL', 'bullish', 'product']",0.66,2026-04-20T16:34:49.686453+00:00
+a6f5cd30-6d74-4429-aa1c-f17fc9b54d2f,reddit,user_492,Breaking: MSFT announces new product line.,"['MSFT', 'bullish', 'product']",0.43,2026-04-20T16:34:50.687705+00:00
+4ed5ffc8-b3d0-4928-80de-9626724665f2,techcrunch,user_218,Analysts downgrade MSFT amid market uncertainty.,"['MSFT', 'bearish', 'analyst']",-0.61,2026-04-20T16:34:51.688671+00:00
+22ff71f6-854c-46df-8116-a7ed8787a43c,reddit,user_195,AAPL stock hits 52-week high.,"['AAPL', 'bullish', 'momentum']",0.64,2026-04-20T16:34:52.690344+00:00
+e57d72c7-86c2-434e-a2bb-0f17777e3358,techcrunch,user_825,Strong demand drives AAPL revenue growth.,"['AAPL', 'bullish', 'revenue']",0.76,2026-04-20T16:34:53.691778+00:00
+1d3b2a14-1454-4618-823d-c8b529a856f1,twitter,user_162,GOOGL stock hits 52-week high.,"['GOOGL', 'bullish', 'momentum']",0.55,2026-04-20T16:34:54.690581+00:00
+1ff59c9a-ecbe-4ee4-aca0-0ba932f04e84,reddit,user_487,AAPL stock hits 52-week high.,"['AAPL', 'bullish', 'momentum']",0.58,2026-04-20T16:34:55.691167+00:00
+f6a667bf-1faf-4afe-b508-1bb48c9cf1a3,techcrunch,user_412,TSLA stock hits 52-week high.,"['TSLA', 'bullish', 'momentum']",0.86,2026-04-20T16:53:50.314360+00:00
+0a30654e-9cbe-425a-982b-716ff8bef3a8,reddit,user_412,TSLA earnings beat expectations this quarter!,"['TSLA', 'bullish', 'earnings']",0.72,2026-04-20T16:53:51.434068+00:00
+d0429014-af6e-4a7c-8d4f-3240eaa7c594,bloomberg,user_813,AAPL stock hits 52-week high.,"['AAPL', 'bullish', 'momentum']",0.37,2026-04-20T16:53:52.434731+00:00
+37b3713d-1a85-4a66-8f57-ab5f089a8884,bloomberg,user_730,Analysts downgrade AMZN amid market uncertainty.,"['AMZN', 'bearish', 'analyst']",-0.71,2026-04-20T16:53:53.436527+00:00
+d3caae99-a028-40ee-98f2-e8c9736f492c,techcrunch,user_834,MSFT stock hits 52-week high.,"['MSFT', 'bullish', 'momentum']",0.78,2026-04-20T16:53:54.436789+00:00
+41a6de7a-5905-4004-8d28-fcf7d3cae986,bloomberg,user_204,Insider buying detected at TSLA.,"['TSLA', 'bullish', 'insider']",0.34,2026-04-20T16:53:55.438526+00:00
+181e6d95-4f12-411a-987b-2f01a124f520,techcrunch,user_405,Breaking: AMZN announces new product line.,"['AMZN', 'bullish', 'product']",0.89,2026-04-20T16:53:56.440272+00:00
+bb7431c1-a23f-4ee2-b77d-94acab305da9,bloomberg,user_615,Analysts downgrade AAPL amid market uncertainty.,"['AAPL', 'bearish', 'analyst']",-0.79,2026-04-20T16:53:57.440957+00:00
+bc6cedd4-7716-46f6-bd0a-28599cdde9d2,techcrunch,user_716,Analysts downgrade AMZN amid market uncertainty.,"['AMZN', 'bearish', 'analyst']",-0.8,2026-04-20T16:53:58.442020+00:00
+671da41d-5147-4f67-ac39-2cdb25b3a4d2,reddit,user_811,MSFT earnings beat expectations this quarter!,"['MSFT', 'bullish', 'earnings']",0.76,2026-04-20T16:53:59.442856+00:00
+c0da6cd7-042d-4027-90f2-35ffe848dc2e,techcrunch,user_724,GOOGL stock hits 52-week high.,"['GOOGL', 'bullish', 'momentum']",0.36,2026-04-20T16:54:00.443332+00:00
+49bb7f21-23a7-4635-a745-b9948ce93bbb,twitter,user_548,GOOGL faces regulatory scrutiny in EU.,"['GOOGL', 'bearish', 'regulation']",-0.42,2026-04-20T16:54:01.444545+00:00
+5503dc67-f539-4f18-b234-440322d1c037,bloomberg,user_373,Analysts downgrade MSFT amid market uncertainty.,"['MSFT', 'bearish', 'analyst']",-0.87,2026-04-20T16:54:02.445402+00:00
+1b54e08e-9c33-4cbf-b9a9-16124bf82e9b,twitter,user_703,GOOGL stock hits 52-week high.,"['GOOGL', 'bullish', 'momentum']",0.81,2026-04-20T16:54:03.445944+00:00
+ac538639-a888-42b6-887d-48fcd4dc7895,reddit,user_618,Breaking: AAPL announces new product line.,"['AAPL', 'bullish', 'product']",0.4,2026-04-20T16:54:04.446548+00:00
+64b22df4-cc1f-4c37-acf1-d3e6ee07a7ad,bloomberg,user_739,Analysts downgrade MSFT amid market uncertainty.,"['MSFT', 'bearish', 'analyst']",-0.74,2026-04-20T16:54:05.447499+00:00
+dc16786b-5f39-4025-ae94-8728889b2a12,reddit,user_742,AMZN stock hits 52-week high.,"['AMZN', 'bullish', 'momentum']",0.53,2026-04-20T16:54:06.448322+00:00
+cf222122-42f3-4283-a378-0da5e92f99b6,twitter,user_853,TSLA stock hits 52-week high.,"['TSLA', 'bullish', 'momentum']",0.35,2026-04-20T16:54:07.449044+00:00
+2bde5aca-457a-4ff9-aac5-c25bdc0d9d85,twitter,user_813,Strong demand drives GOOGL revenue growth.,"['GOOGL', 'bullish', 'revenue']",0.5,2026-04-20T16:54:08.450157+00:00
+64b22df4-cc1f-4c37-acf1-d3e6ee07a7ad,bloomberg,user_739,Analysts downgrade MSFT amid market uncertainty.,"['MSFT', 'bearish', 'analyst']",-0.74,2026-04-20T16:54:05.447499+00:00
+dc16786b-5f39-4025-ae94-8728889b2a12,reddit,user_742,AMZN stock hits 52-week high.,"['AMZN', 'bullish', 'momentum']",0.53,2026-04-20T16:54:06.448322+00:00
+cf222122-42f3-4283-a378-0da5e92f99b6,twitter,user_853,TSLA stock hits 52-week high.,"['TSLA', 'bullish', 'momentum']",0.35,2026-04-20T16:54:07.449044+00:00
+2bde5aca-457a-4ff9-aac5-c25bdc0d9d85,twitter,user_813,Strong demand drives GOOGL revenue growth.,"['GOOGL', 'bullish', 'revenue']",0.5,2026-04-20T16:54:08.450157+00:00
+2f1c620c-c56e-44e8-b95f-b58651adcf25,bloomberg,user_452,AAPL stock hits 52-week high.,"['AAPL', 'bullish', 'momentum']",0.84,2026-04-20T16:54:09.451167+00:00
+644036ce-56c7-4b9f-b3ef-37f0e5793b4c,twitter,user_448,AMZN faces regulatory scrutiny in EU.,"['AMZN', 'bearish', 'regulation']",-0.79,2026-04-20T16:54:10.452451+00:00
+3bede1cb-5426-4882-9762-11436aede8c9,techcrunch,user_291,GOOGL earnings beat expectations this quarter!,"['GOOGL', 'bullish', 'earnings']",0.81,2026-04-20T16:54:11.453044+00:00
+464e7c15-5e94-4620-b867-efdec4311233,twitter,user_862,CEO of GOOGL steps down unexpectedly.,"['GOOGL', 'bearish', 'management']",-0.75,2026-04-20T19:09:14.670795+00:00
+3caa1ce8-0057-4ec9-87be-200d616532f2,techcrunch,user_778,Strong demand drives AMZN revenue growth.,"['AMZN', 'bullish', 'revenue']",0.39,2026-04-20T19:09:15.781271+00:00
+82096a6c-f104-42b2-9bfa-248ee913ea63,reddit,user_876,Strong demand drives AAPL revenue growth.,"['AAPL', 'bullish', 'revenue']",0.78,2026-04-20T19:09:16.782323+00:00
+e6cf4128-d1b7-4915-83fe-725058167840,reddit,user_470,CEO of GOOGL steps down unexpectedly.,"['GOOGL', 'bearish', 'management']",-0.37,2026-04-20T19:09:17.782951+00:00
+e8154206-b2e9-4d69-91ca-ae0dd2a1d621,techcrunch,user_481,AAPL earnings beat expectations this quarter!,"['AAPL', 'bullish', 'earnings']",0.47,2026-04-20T19:09:18.783641+00:00
+e7d8451b-c384-4150-a112-be1ec9aa1fdb,reddit,user_773,Strong demand drives MSFT revenue growth.,"['MSFT', 'bullish', 'revenue']",0.53,2026-04-20T19:09:19.784255+00:00
+c65a8c4f-1d94-4d9f-830c-a3333622b517,bloomberg,user_657,Strong demand drives MSFT revenue growth.,"['MSFT', 'bullish', 'revenue']",0.4,2026-04-20T19:09:20.785033+00:00
+f7aa2927-86f4-414b-905d-d0019862cf3e,reddit,user_965,CEO of AAPL steps down unexpectedly.,"['AAPL', 'bearish', 'management']",-0.34,2026-04-20T19:09:21.786052+00:00
+d16a02a6-f0f6-4f45-9d27-5d4ceb588753,reddit,user_381,Strong demand drives GOOGL revenue growth.,"['GOOGL', 'bullish', 'revenue']",0.39,2026-04-20T19:09:22.787049+00:00
+a2fb5d57-1d22-4de6-9ef6-df386c8881e8,reddit,user_140,TSLA faces regulatory scrutiny in EU.,"['TSLA', 'bearish', 'regulation']",-0.41,2026-04-20T19:09:23.788086+00:00
+9956667b-ae26-4824-ae4d-2117bc87c6ba,bloomberg,user_130,GOOGL earnings beat expectations this quarter!,"['GOOGL', 'bullish', 'earnings']",0.79,2026-04-20T19:09:24.787639+00:00
+d468a24e-beda-4b21-b37e-b7125e43e761,techcrunch,user_682,Strong demand drives TSLA revenue growth.,"['TSLA', 'bullish', 'revenue']",0.65,2026-04-20T19:09:25.788589+00:00
+3a265fe1-7fff-4a85-8c09-0ba4c5a1423c,bloomberg,user_161,AAPL earnings beat expectations this quarter!,"['AAPL', 'bullish', 'earnings']",0.33,2026-04-20T19:09:26.789317+00:00
+78e2c9ba-f27a-43d8-8708-ee9f612024bd,reddit,user_108,AMZN faces regulatory scrutiny in EU.,"['AMZN', 'bearish', 'regulation']",-0.3,2026-04-20T19:09:27.790295+00:00
+c5d79653-9eb4-44c5-903f-3ce16560ddbc,reddit,user_974,Analysts downgrade MSFT amid market uncertainty.,"['MSFT', 'bearish', 'analyst']",-0.35,2026-04-20T19:09:28.791233+00:00
+26221aef-7407-4e2d-aacb-0bc9a9d07536,techcrunch,user_820,Insider buying detected at MSFT.,"['MSFT', 'bullish', 'insider']",0.9,2026-04-20T19:09:29.792215+00:00
+160976dc-3fe9-433f-9f46-4f26a5b947cf,twitter,user_374,CEO of AAPL steps down unexpectedly.,"['AAPL', 'bearish', 'management']",-0.84,2026-04-20T19:09:30.793299+00:00
+e8674d6f-2a07-435a-9ed5-da9f735dd22b,techcrunch,user_687,AMZN earnings beat expectations this quarter!,"['AMZN', 'bullish', 'earnings']",0.45,2026-04-20T19:09:31.794297+00:00

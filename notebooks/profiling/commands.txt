@@ -1,0 +1,82 @@
+
+Quickfix - to run on terminal
+
+# RabbitMQ latency 
+python -c "
+import time, pika, msgpack, statistics
+def serialize(d): return msgpack.packb(d, use_bin_type=True)
+def deserialize(d): return msgpack.unpackb(d, raw=False)
+EXCHANGE = 'stock-ticks'
+QUEUE = 'e2e-latency-test'
+N = 200
+conn = pika.BlockingConnection(pika.ConnectionParameters('localhost', heartbeat=60))
+ch = conn.channel()
+ch.exchange_declare(exchange=EXCHANGE, exchange_type='fanout', durable=True)
+ch.queue_declare(queue=QUEUE, durable=False, auto_delete=True)
+ch.queue_bind(queue=QUEUE, exchange=EXCHANGE)
+ch.basic_qos(prefetch_count=1)
+latencies = []
+def callback(c, method, props, body):
+    msg = deserialize(body)
+    if 't_sent' in msg:
+        latencies.append((time.time() - msg['t_sent']) * 1000)
+    c.basic_ack(delivery_tag=method.delivery_tag)
+    if len(latencies) >= N:
+        c.stop_consuming()
+ch.basic_consume(queue=QUEUE, on_message_callback=callback)
+pub_ch = conn.channel()
+for _ in range(N):
+    pub_ch.basic_publish(exchange=EXCHANGE, routing_key='',
+        body=serialize({'symbol':'AAPL','price':180.0,'volume':100,'t_sent':time.time()}),
+        properties=pika.BasicProperties(delivery_mode=2))
+ch.start_consuming()
+conn.close()
+print(f'RabbitMQ E2E Latency ({len(latencies)} messages)')
+print(f'  mean  = {statistics.mean(latencies):.2f} ms')
+print(f'  stdev = {statistics.stdev(latencies):.2f} ms')
+print(f'  min   = {min(latencies):.2f} ms')
+print(f'  max   = {max(latencies):.2f} ms')
+print(f'  p95   = {sorted(latencies)[int(0.95*len(latencies))]:.2f} ms')
+"
+
+# RabbitMQ stability & througput
+python -c "
+import time, pika, msgpack
+def serialize(d): return msgpack.packb(d, use_bin_type=True)
+conn = pika.BlockingConnection(pika.ConnectionParameters('localhost', heartbeat=60))
+ch = conn.channel()
+ch.exchange_declare(exchange='stock-ticks', exchange_type='fanout', durable=True)
+DURATION, WINDOW = 60, 10
+start = window_start = time.time()
+window_count = total = 0
+while time.time() - start < DURATION:
+    ch.basic_publish(exchange='stock-ticks', routing_key='',
+        body=serialize({'symbol':'AAPL','price':180.0,'volume':100}),
+        properties=pika.BasicProperties(delivery_mode=2))
+    window_count += 1; total += 1
+    now = time.time()
+    if now - window_start >= WINDOW:
+        print(f't={int(now-start):3d}s  window={window_count/WINDOW:.0f} msg/s  total={total}')
+        window_start = now; window_count = 0
+conn.close()
+"
+
+# Kafka stability
+docker exec -it jupyter1 python3 -c "
+import time, msgpack
+from datetime import datetime, timezone
+from kafka import KafkaProducer
+def serialize(d): return msgpack.packb(d, use_bin_type=True)
+producer = KafkaProducer(bootstrap_servers='kafka1:9092,kafka2:9092,kafka3:9092', value_serializer=serialize)
+DURATION, WINDOW = 60, 10
+start = window_start = time.time()
+window_count = total = 0
+while time.time() - start < DURATION:
+    producer.send('stock-ticks', value={'symbol':'AAPL','price':180.0,'volume':100,'timestamp':datetime.now(timezone.utc).isoformat()})
+    window_count += 1; total += 1
+    now = time.time()
+    if now - window_start >= WINDOW:
+        print(f't={int(now-start):3d}s  window={window_count/WINDOW:.0f} msg/s  total={total}')
+        window_start = now; window_count = 0
+producer.flush(); producer.close()
+"
