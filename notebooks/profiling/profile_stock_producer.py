@@ -25,8 +25,8 @@ from datetime import datetime, timezone
 from io import StringIO
 
 from kafka import KafkaProducer
-from shared.kafka_config import BOOTSTRAP_SERVERS, TOPICS
-from shared.serializer import serialize
+from notebooks.shared.kafka_config import BOOTSTRAP_SERVERS, TOPICS
+from notebooks.shared.serializer import serialize
 
 TOPIC = TOPICS["stock_ticks"]
 ITERATIONS = 500  # number of messages to send per run

@@ -1,14 +1,12 @@
-Consumer Deserialization Bottleneck Experiment
+Consumer Sink Profiling Results
 Iterations: 10000
 
-msgpack:
-  mean  = 0.0005 ms
-  stdev = 0.0014 ms
-  total = 5.11 ms
+--- Deserialization only ---
+msgpack:  mean=0.0006ms  stdev=0.0006ms  total=5.86ms
+JSON:     mean=0.0013ms  stdev=0.0007ms  total=12.71ms
+Speedup:  2.17x
 
-JSON:
-  mean  = 0.0013 ms
-  stdev = 0.0011 ms
-  total = 12.79 ms
-
-Speedup: msgpack is 2.50x faster than JSON
+--- Full sink callback (deserialize + file open + write + flush) ---
+Per-message flush:  mean=0.0167ms  stdev=0.0078ms  total=166.64ms
+Batched flush:      mean=0.0022ms  stdev=0.0160ms  total=22.31ms
+Speedup:  7.47x

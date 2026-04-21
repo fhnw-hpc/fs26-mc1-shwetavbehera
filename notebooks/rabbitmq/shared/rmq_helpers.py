@@ -1,6 +1,6 @@
 import time
 import pika
-from shared.rmq_config import RABBITMQ_HOST
+from rabbitmq.shared.rmq_config import RABBITMQ_HOST
 
 
 def get_connection(retries: int = 10, delay: int = 3):

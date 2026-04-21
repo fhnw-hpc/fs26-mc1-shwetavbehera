@@ -1,0 +1,3 @@
+Kafka throughput: 1384076 messages in 41.7s = 33214 msg/s
+
+RabbitMQ throughput: 311683 messages in 30.0s = 10389 msg/s

@@ -1,0 +1,27 @@
+RabbitMQ E2E Latency (200 messages)
+
+  mean  = 41.12 ms
+
+  stdev = 13.97 ms
+
+  min   = 16.87 ms
+
+  max   = 64.94 ms
+
+  p95   = 63.07 ms
+
+
+
+
+Kafka E2E Latency (200 messages)
+
+  mean  = 108.36 ms
+
+  stdev = 104.53 ms
+
+  min   = 11.11 ms
+
+  max   = 688.18 ms
+
+  p95   = 177.93 ms
+

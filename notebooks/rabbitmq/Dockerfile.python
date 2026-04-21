@@ -4,5 +4,5 @@ WORKDIR /app
 
 RUN pip install --no-cache-dir pika msgpack
 
-# Copy entire rabbitmq folder contents into /app
-COPY . .
+# Copy into /app/rabbitmq/ so the package structure is preserved
+COPY . ./rabbitmq/
