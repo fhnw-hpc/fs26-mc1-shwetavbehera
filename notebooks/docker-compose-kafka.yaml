@@ -1,0 +1,178 @@
+services:
+
+  # ── Kafka Cluster (KRaft, no Zookeeper) ─────────────────────────────────────
+
+  kafka1:
+    image: confluentinc/cp-kafka
+    container_name: kafka1
+    hostname: kafka1
+    environment:
+      KAFKA_NODE_ID: 1
+      KAFKA_CONTROLLER_LISTENER_NAMES: 'CONTROLLER'
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: 'CONTROLLER:PLAINTEXT,INTERNAL:PLAINTEXT'
+      KAFKA_LISTENERS: 'INTERNAL://kafka1:9092,CONTROLLER://kafka1:9093'
+      KAFKA_ADVERTISED_LISTENERS: 'INTERNAL://kafka1:9092'
+      KAFKA_INTER_BROKER_LISTENER_NAME: 'INTERNAL'
+      KAFKA_CONTROLLER_QUORUM_VOTERS: '1@kafka1:9093,2@kafka2:9093,3@kafka3:9093'
+      KAFKA_PROCESS_ROLES: 'broker,controller'
+      KAFKA_GROUP_INITIAL_REBALANCE_DELAY_MS: 0
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 3
+      KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 3
+      CLUSTER_ID: 'BDb4EWyiS1GjcEKCew2HvQ'
+      KAFKA_LOG_DIRS: '/tmp/kraft-combined-logs'
+
+  kafka2:
+    image: confluentinc/cp-kafka
+    container_name: kafka2
+    hostname: kafka2
+    environment:
+      KAFKA_NODE_ID: 2
+      KAFKA_CONTROLLER_LISTENER_NAMES: 'CONTROLLER'
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: 'CONTROLLER:PLAINTEXT,INTERNAL:PLAINTEXT'
+      KAFKA_LISTENERS: 'INTERNAL://kafka2:9092,CONTROLLER://kafka2:9093'
+      KAFKA_ADVERTISED_LISTENERS: 'INTERNAL://kafka2:9092'
+      KAFKA_INTER_BROKER_LISTENER_NAME: 'INTERNAL'
+      KAFKA_CONTROLLER_QUORUM_VOTERS: '1@kafka1:9093,2@kafka2:9093,3@kafka3:9093'
+      KAFKA_PROCESS_ROLES: 'broker,controller'
+      KAFKA_GROUP_INITIAL_REBALANCE_DELAY_MS: 0
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 3
+      KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 3
+      CLUSTER_ID: 'BDb4EWyiS1GjcEKCew2HvQ'
+      KAFKA_LOG_DIRS: '/tmp/kraft-combined-logs'
+
+  kafka3:
+    image: confluentinc/cp-kafka
+    container_name: kafka3
+    hostname: kafka3
+    environment:
+      KAFKA_NODE_ID: 3
+      KAFKA_CONTROLLER_LISTENER_NAMES: 'CONTROLLER'
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: 'CONTROLLER:PLAINTEXT,INTERNAL:PLAINTEXT'
+      KAFKA_LISTENERS: 'INTERNAL://kafka3:9092,CONTROLLER://kafka3:9093'
+      KAFKA_ADVERTISED_LISTENERS: 'INTERNAL://kafka3:9092'
+      KAFKA_INTER_BROKER_LISTENER_NAME: 'INTERNAL'
+      KAFKA_CONTROLLER_QUORUM_VOTERS: '1@kafka1:9093,2@kafka2:9093,3@kafka3:9093'
+      KAFKA_PROCESS_ROLES: 'broker,controller'
+      KAFKA_GROUP_INITIAL_REBALANCE_DELAY_MS: 0
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 3
+      KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 3
+      CLUSTER_ID: 'BDb4EWyiS1GjcEKCew2HvQ'
+      KAFKA_LOG_DIRS: '/tmp/kraft-combined-logs'
+
+  # ── Monitoring ───────────────────────────────────────────────────────────────
+
+  kafdrop:
+    image: obsidiandynamics/kafdrop:latest
+    container_name: kafdrop1
+    ports:
+      - "9000:9000"
+    environment:
+      KAFKA_BROKERCONNECT: "kafka1:9092,kafka2:9092,kafka3:9092"
+    depends_on:
+      - kafka1
+      - kafka2
+      - kafka3
+
+  # ── Jupyter (for interactive notebooks and running scripts manually) ─────────
+
+  jupyter1:
+    container_name: jupyter1
+    image: jupyter/scipy-notebook:notebook-7.0.3
+    hostname: jupyter1
+    volumes:
+      - ./:/home/jovyan/
+    ports:
+      - "8888:8888"
+    environment:
+      PYTHONUNBUFFERED: 1
+      CLUSTER_ID: 'BDb4EWyiS1GjcEKCew2HvQ'
+    command: >
+      bash -c "pip install kafka-python msgpack &&
+              jupyter notebook --NotebookApp.token='' --NotebookApp.password='' --ip=0.0.0.0 --no-browser"
+    depends_on:
+      - kafka1
+      - kafka2
+      - kafka3
+
+  # ── Producers ────────────────────────────────────────────────────────────────
+
+  stock-producer:
+    build:
+      context: .
+      dockerfile: Dockerfile.python
+    container_name: kafka-stock-producer
+    command: python producers/stock_producer.py
+    depends_on:
+      - kafka1
+      - kafka2
+      - kafka3
+    environment:
+      PYTHONUNBUFFERED: 1
+    profiles:
+      - producers   # start with: docker-compose --profile producers up
+
+  news-producer:
+    build:
+      context: .
+      dockerfile: Dockerfile.python
+    container_name: kafka-news-producer
+    command: python producers/news_producer.py
+    depends_on:
+      - kafka1
+      - kafka2
+      - kafka3
+    environment:
+      PYTHONUNBUFFERED: 1
+    profiles:
+      - producers
+
+  # ── Consumers ────────────────────────────────────────────────────────────────
+
+  consumer-sink-stocks:
+    build:
+      context: .
+      dockerfile: Dockerfile.python
+    container_name: kafka-sink-stocks
+    command: python consumers/consumer_sink_stocks.py
+    volumes:
+      - ./data:/app/data        # CSV files written here on host
+    depends_on:
+      - kafka1
+      - kafka2
+      - kafka3
+    environment:
+      PYTHONUNBUFFERED: 1
+    profiles:
+      - consumers
+
+  consumer-sink-news:
+    build:
+      context: .
+      dockerfile: Dockerfile.python
+    container_name: kafka-sink-news
+    command: python consumers/consumer_sink_news.py
+    volumes:
+      - ./data:/app/data
+    depends_on:
+      - kafka1
+      - kafka2
+      - kafka3
+    environment:
+      PYTHONUNBUFFERED: 1
+    profiles:
+      - consumers
+
+  consumer-processor:
+    build:
+      context: .
+      dockerfile: Dockerfile.python
+    container_name: kafka-processor
+    command: python consumers/consumer_processor.py
+    depends_on:
+      - kafka1
+      - kafka2
+      - kafka3
+    environment:
+      PYTHONUNBUFFERED: 1
+    profiles:
+      - consumers

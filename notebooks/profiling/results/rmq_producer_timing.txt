@@ -1,0 +1,13 @@
+RabbitMQ Stock Producer Timing
+Runs: 5 x 500 iterations each
+
+Run 1 mean: 0.075 ms
+Run 2 mean: 0.073 ms
+Run 3 mean: 0.065 ms
+Run 4 mean: 0.064 ms
+Run 5 mean: 0.068 ms
+
+Overall mean:  0.069 ms
+Overall stdev: 0.029 ms
+Overall min:   0.048 ms
+Overall max:   0.700 ms

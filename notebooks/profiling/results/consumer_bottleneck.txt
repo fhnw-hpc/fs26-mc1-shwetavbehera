@@ -1,0 +1,12 @@
+Consumer Sink Profiling Results
+Iterations: 10000
+
+--- Deserialization only ---
+msgpack:  mean=0.0006ms  stdev=0.0006ms  total=5.86ms
+JSON:     mean=0.0013ms  stdev=0.0007ms  total=12.71ms
+Speedup:  2.17x
+
+--- Full sink callback (deserialize + file open + write + flush) ---
+Per-message flush:  mean=0.0167ms  stdev=0.0078ms  total=166.64ms
+Batched flush:      mean=0.0022ms  stdev=0.0160ms  total=22.31ms
+Speedup:  7.47x

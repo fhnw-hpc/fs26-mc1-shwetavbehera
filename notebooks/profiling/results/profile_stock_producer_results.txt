@@ -1,0 +1,98 @@
+=== Experiment 1: RabbitMQ Producer Timing (5 runs x 500 iterations) ===
+
+Connected to RabbitMQ at 'rabbitmq1' (attempt 1)
+
+  Run 1: mean=0.123ms  stdev=0.255ms
+
+  Run 2: mean=0.077ms  stdev=0.035ms
+
+  Run 3: mean=0.073ms  stdev=0.029ms
+
+  Run 4: mean=0.078ms  stdev=0.037ms
+
+  Run 5: mean=0.078ms  stdev=0.034ms
+
+
+  Overall (2500 iterations):
+
+    mean  = 0.086 ms
+
+    stdev = 0.119 ms
+
+    min   = 0.042 ms
+
+    max   = 5.239 ms
+
+
+  Saved timing results to: /app/rabbitmq/profiling/results/rmq_producer_timing.txt
+
+
+=== Experiment 2: RabbitMQ Producer cProfile (500 iterations) ===
+
+Connected to RabbitMQ at 'rabbitmq1' (attempt 1)
+
+  Saved profile to: /app/rabbitmq/profiling/results/rmq_producer.prof
+
+
+  Top 10 functions by cumulative time:
+
+         115885 function calls in 0.080 seconds
+
+
+   Ordered by: cumulative time
+
+   List reduced from 111 to 10 due to restriction <10>
+
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+
+        1    0.003    0.003    0.080    0.080 /app/rabbitmq/profiling/profile_stock_producer_rmq.py:53(producer_loop)
+
+      500    0.000    0.000    0.070    0.000 /usr/local/lib/python3.11/site-packages/pika/adapters/blocking_connection.py:2186(basic_publish)
+
+      500    0.001    0.000    0.049    0.000 /usr/local/lib/python3.11/site-packages/pika/adapters/blocking_connection.py:1334(_flush_output)
+
+      500    0.001    0.000    0.048    0.000 /usr/local/lib/python3.11/site-packages/pika/adapters/blocking_connection.py:484(_flush_output)
+
+      500    0.000    0.000    0.042    0.000 /usr/local/lib/python3.11/site-packages/pika/adapters/select_connection.py:572(poll)
+
+      500    0.001    0.000    0.042    0.000 /usr/local/lib/python3.11/site-packages/pika/adapters/select_connection.py:1176(poll)
+
+      500    0.001    0.000    0.038    0.000 /usr/local/lib/python3.11/site-packages/pika/adapters/select_connection.py:876(_dispatch_fd_events)
+
+      500    0.000    0.000    0.037    0.000 /usr/local/lib/python3.11/site-packages/pika/adapters/utils/selector_ioloop_adapter.py:371(_on_reader_writer_fd_events)
+
+      500    0.000    0.000    0.037    0.000 /usr/local/lib/python3.11/site-packages/pika/diagnostic_utils.py:40(log_exception_func_wrap)
+
+      500    0.001    0.000    0.037    0.000 /usr/local/lib/python3.11/site-packages/pika/adapters/utils/io_services_utils.py:1085(_on_socket_writable)
+
+
+
+
+  Top 3 functions by total time:
+
+         115885 function calls in 0.080 seconds
+
+
+   Ordered by: internal time
+
+   List reduced from 111 to 3 due to restriction <3>
+
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+
+     1500    0.027    0.000    0.027    0.000 {method 'send' of '_socket.socket' objects}
+
+        1    0.003    0.003    0.080    0.080 /app/rabbitmq/profiling/profile_stock_producer_rmq.py:53(producer_loop)
+
+      500    0.002    0.000    0.019    0.000 /usr/local/lib/python3.11/site-packages/pika/connection.py:2257(_send_message)
+
+
+
+
+
+
+
+
+
+

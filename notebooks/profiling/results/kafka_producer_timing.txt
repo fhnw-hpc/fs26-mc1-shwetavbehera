@@ -1,0 +1,13 @@
+Kafka Stock Producer Timing
+Runs: 5 x 500 iterations each
+
+Run 1 mean: 0.225 ms
+Run 2 mean: 0.019 ms
+Run 3 mean: 0.019 ms
+Run 4 mean: 0.016 ms
+Run 5 mean: 0.019 ms
+
+Overall mean:  0.060 ms
+Overall stdev: 2.083 ms
+Overall min:   0.009 ms
+Overall max:   104.105 ms

@@ -1,0 +1,129 @@
+services:
+
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: rabbitmq1
+    hostname: rabbitmq1
+    ports:
+      - "5672:5672"    # AMQP protocol port (producers/consumers connect here)
+      - "15672:15672"  # Management UI (http://localhost:15672, guest/guest)
+    environment:
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: guest
+    healthcheck:
+      test: ["CMD", "rabbitmq-diagnostics", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  stock-producer:
+    build:
+      context: .
+      dockerfile: Dockerfile.python
+    container_name: rmq-stock-producer
+    command: python -m rabbitmq.producers.stock_producer_rmq
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+    environment:
+      RABBITMQ_HOST: rabbitmq1
+
+  news-producer:
+    build:
+      context: .
+      dockerfile: Dockerfile.python
+    container_name: rmq-news-producer
+    command: python -m rabbitmq.producers.news_producer_rmq
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+    environment:
+      RABBITMQ_HOST: rabbitmq1
+
+  consumer-sink-stocks:
+    build:
+      context: .
+      dockerfile: Dockerfile.python
+    container_name: rmq-sink-stocks
+    command: python -m rabbitmq.consumers.consumer_sink_stocks_rmq
+    volumes:
+      - ./data:/app/rabbitmq/data
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+    environment:
+      RABBITMQ_HOST: rabbitmq1
+
+  consumer-sink-news:
+    build:
+      context: .
+      dockerfile: Dockerfile.python
+    container_name: rmq-sink-news
+    command: python -m rabbitmq.consumers.consumer_sink_news_rmq
+    volumes:
+      - ./data:/app/rabbitmq/data
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+    environment:
+      RABBITMQ_HOST: rabbitmq1
+
+  consumer-processor:
+    build:
+      context: .
+      dockerfile: Dockerfile.python
+    container_name: rmq-processor
+    command: python -m rabbitmq.consumers.consumer_processor_rmq
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+    environment:
+      RABBITMQ_HOST: rabbitmq1
+
+  e2e_test:
+    build:
+      context: .
+      dockerfile: Dockerfile.python
+    container_name: e2e_test
+    command: python -m rabbitmq.profiling.e2e_latency_rmq
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+    environment:
+      RABBITMQ_HOST: rabbitmq1
+
+  stability_test:
+    build:
+      context: .
+      dockerfile: Dockerfile.python
+    container_name: stability_test
+    command: python -m rabbitmq.profiling.stability_rmq
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+    environment:
+      RABBITMQ_HOST: rabbitmq1
+
+  throughput_test:
+    build:
+      context: .
+      dockerfile: Dockerfile.python
+    container_name: throughput_test
+    command: python -m rabbitmq.profiling.throughput_rmq
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+    environment:
+      RABBITMQ_HOST: rabbitmq1
+
+  profile_stock_producer:
+    build:
+      context: .
+      dockerfile: Dockerfile.python
+    container_name: profile_stock_producer
+    command: python -m rabbitmq.profiling.profile_stock_producer_rmq
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+    environment:
+      RABBITMQ_HOST: rabbitmq1

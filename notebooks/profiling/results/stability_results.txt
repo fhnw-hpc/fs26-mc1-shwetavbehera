@@ -1,0 +1,18 @@
+RabbitMQ:
+  t= 10s  window=16349 msg/s  total=163491
+  t= 20s  window=16906 msg/s  total=332555
+  t= 30s  window=16951 msg/s  total=502065
+  t= 40s  window=16648 msg/s  total=668541
+  t= 50s  window=16823 msg/s  total=836775
+
+
+Kafka:
+  t= 10s  window=46913 msg/s  total=469134
+  t= 20s  window=43540 msg/s  total=904530
+  t= 30s  window=47760 msg/s  total=1382128
+  t= 40s  window=43928 msg/s  total=1821413
+  t= 50s  window=38359 msg/s  total=2205001
+
+
+
+  
